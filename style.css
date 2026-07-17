@@ -61,6 +61,11 @@ button:hover {
     color: #fff;
 }
 
+.delete {
+    background-color: aquamarine;
+    color: #333333;
+}
+
 .equals {
     background-color: #01ff70;
     grid-row: span 3;

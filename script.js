@@ -11,6 +11,9 @@ for (let i = 0; i < buttonsEl.length; i++) {
         else if (buttonValue === "=") {
             calculateResult();
         }
+        else if (buttonValue === "DEL") {
+            deleteLast();
+        }
         else {
             appendValue(buttonValue);
         }
@@ -25,4 +28,7 @@ function calculateResult() {
 function appendValue(buttonValue) {
     inputFieldEl.value += buttonValue;
 
+}
+function deleteLast() {
+    inputFieldEl.value = inputFieldEl.value.slice(0, -1);
 }
